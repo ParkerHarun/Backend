@@ -1,0 +1,26 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "common",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "pm2 start ecosystem.ts --env local",
+    "staging": "pm2 start ecosystem.ts --env staging",
+    "production": "pm2 start ecosystem.ts --env production",
+    "dev": "nodemon --exec ts-node server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "pm2": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
